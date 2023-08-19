@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:wght@100;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100&family=Rubik:wght@500&family=Simonetta&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: hsl(198, 38%, 56%); */
+    background-color: #1F305E;
+    display: flex;
+}
+
+.part1{
+    width: 20%;
+    height: 100%;
+}
+.part2{
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./bg-image.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.part3{
+    width: 10%;
+    height: 100%;
+}
+
+.text-div{
+    width: 27rem;
+    /* background-color: #fff; */
+    position: absolute;
+    left: 5%;
+    top: 70%;
+    transform: translate(0,-50%);
+}
+.text-div > h1{
+    font-size: 4.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    line-height: 4rem;
+}
+
+.small-img{
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./small-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.vertical-text{
+    position: absolute;
+    top: -12%;
+    right: -65%;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    z-index: 999;
+}
+.vertical-text > h1{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1rem;
+    -webkit-text-stroke: 1px  #fff;
+    text-transform: uppercase;
+    color: transparent;
+}
+.nav{
+    display: flex;
+    gap: 5.6rem;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+.nav > img{
+    height: 3rem;
+}
+.nav > h5{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
